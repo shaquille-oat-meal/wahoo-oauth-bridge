@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Connecting Wahoo...</title>
+</head>
+<body>
+    <p>Connecting to the application...</p>
+
+    <script>
+        const localCallback =
+            "http://127.0.0.1:8765/oauth/callback";
+
+        window.location.replace(
+            localCallback + window.location.search
+        );
+    </script>
+</body>
+</html>
